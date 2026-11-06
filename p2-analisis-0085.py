@@ -16,10 +16,10 @@ print("\n+-+-+-+- Agrupar por Tipo de Motor -+-+-+-+")
 agrupado = df.groupby("Tipo_Motor")
 print("\n+-+-+-+- Por agregación: Promedios -+-+-+-+")
 # Calculamos el promedio de las columnas numéricas (Autonomía y Precio)
-print(agrupado[['Autonomia_Km',]].mean())
+print(agrupado[['Autonomia_Km', 'Precio_USD']].mean())
 print("\n+-+-+-+- Por agregación: Máximos -+-+-+-+")
 # Calculamos el valor máximo de las columnas numéricas por tipo de motor
-print(agrupado[['Autonomia_Km',]].max())
+print(agrupado[['Autonomia_Km', 'Precio_USD']].max())
 
 
 
